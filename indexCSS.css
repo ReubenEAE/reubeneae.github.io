@@ -17,12 +17,14 @@ h1{
 
 .intro-para{
     font-family: bitter;
+    text-align:center;
 }
 
 .myName {
     font-family: bitteritalics;
+    text-align:center;
 }
 
 *{
-    font-size: 10px;
+    font-size: 100px;
 }
