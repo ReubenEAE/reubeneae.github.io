@@ -2,3 +2,9 @@ h1{
     color:crimson;
     text-align:center
 }
+
+.backgroundIMG {
+    max-width: max-content;
+    max-height: max-content;
+    padding: auto;
+}
