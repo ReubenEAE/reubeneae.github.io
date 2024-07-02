@@ -1,8 +1,8 @@
 @font-face {
     font-family: bitteritalics;
-    src: url();
+    src: url(./assets/Bitter-Italic-VariableFont_wght.ttf) format(truetype);
     font-family: bitter;
-    src: url()
+    src: url(./assets/Bitter-VariableFont_wght.ttf) format(truetype)
 }
 
 
