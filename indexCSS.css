@@ -1,10 +1,13 @@
-h1{
-    color:crimson;
-    text-align:center
+@font-face {
+    font-family: bitteritalics;
+    src: url();
+    font-family: bitter;
+    src: url()
 }
 
-.backgroundIMG {
-    max-width: max-content;
-    max-height: max-content;
-    padding: auto;
+
+h1{
+    color:crimson;
+    text-align:center;
+    background-image: url(./assets/gradient-blue.jpg);
 }
