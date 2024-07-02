@@ -22,3 +22,7 @@ h1{
 .myName {
     font-family: bitteritalics;
 }
+
+*{
+    font-size: 10px;
+}
