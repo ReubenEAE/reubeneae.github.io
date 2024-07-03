@@ -12,7 +12,9 @@ h1{
     text-align:center;
     background-size: auto;
     font-family: bitter;
-    font-size: 75%;
+    box-sizing: content-box;
+    max-width: 100% ;
+    max-height: 100% ;
 
 }
 
