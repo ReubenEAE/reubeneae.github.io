@@ -10,7 +10,6 @@
 h1{
     color:crimson;
     text-align:center;
-    background-image: url(./assets/gradient-blue.jpg);
     font-family: bitter;
 
 }
@@ -23,8 +22,9 @@ h1{
 .myName {
     font-family: bitteritalics;
     text-align:center;
+    color: aquamarine;
 }
 
-*{
-    font-size: 100px;
+html{
+    background-color: blue;
 }
