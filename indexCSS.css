@@ -13,7 +13,9 @@ h1{
     font-family: bitter;
     box-sizing:border-box;
     font-size: 4rem;
-    position:relative;
+    margin: auto;
+    padding: 0;
+    position:sticky
 }
 
 .myName {
@@ -24,6 +26,7 @@ h1{
 
 .intro-para {
     font-family: bitter;
+    box-sizing: border-box;
     text-align:center;
     font-size: 3rem;
 }
