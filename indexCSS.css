@@ -11,6 +11,7 @@ h1{
     color:crimson;
     text-align:center;
     background-image: url(./assets/gradient-blue.jpg);
+    background-size: auto;
     font-family: bitter;
 
 }
@@ -27,5 +28,4 @@ h1{
 
 *{
     font-size: 50px;
-    background-image: url(./assets/gradient-blue.jpg);
 }
