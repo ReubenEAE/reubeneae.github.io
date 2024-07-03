@@ -13,20 +13,22 @@ h1{
     background-image: url(./assets/gradient-blue.jpg);
     background-size: auto;
     font-family: bitter;
+    font-size: large;
 
 }
 
 .intro-para{
     font-family: bitter;
     text-align:center;
+    font-size: 10%;
 }
 
 .myName {
     font-family: bitteritalics;
     text-align:center;
+    font-size: larger;
 }
 
 *{
-    font-size: 30%;
     background-color:#2a7dd5;
 }
