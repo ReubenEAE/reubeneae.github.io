@@ -15,7 +15,11 @@ h1{
     font-size: 4rem;
     margin: auto;
     padding: 0;
-    position:sticky
+    position:sticky;
+    z-index: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 40px;
 }
 
 .myName {
@@ -29,6 +33,7 @@ h1{
     box-sizing: border-box;
     text-align:center;
     font-size: 3rem;
+    position: relative;
 }
 
 html{
