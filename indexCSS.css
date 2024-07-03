@@ -8,15 +8,20 @@
 
 
 h1{
-    color:crimson;
+    color:black;
     text-align:center;
     font-family: bitter;
+    box-sizing: content-box;
+    max-width: 100% ;
+    max-height: 100% ;
+    margin:auto
 
 }
 
-.intro-para{
+.intro-para {
     font-family: bitter;
     text-align:center;
+    font-size: 100px;
 }
 
 .myName {
