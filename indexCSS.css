@@ -11,11 +11,9 @@ h1{
     color:black;
     text-align:center;
     font-family: bitter;
-    box-sizing: content-box;
-    max-width: 100% ;
-    max-height: 100% ;
-    margin:auto;
+    box-sizing:border-box;
     font-size: 4rem;
+    position:relative;
 }
 
 .myName {
@@ -24,16 +22,10 @@ h1{
     font-size: 6rem;
 }
 
-.MyNameIs{
-    font-family: inherit;
-    color: inherit;
-    font-size: inherit;
-}
-
 .intro-para {
     font-family: bitter;
     text-align:center;
-    font-size: 100px;
+    font-size: 3rem;
 }
 
 html{
