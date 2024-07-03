@@ -8,25 +8,24 @@
 
 
 h1{
-    color:crimson;
+    color:black;
     text-align:center;
-    background-image: url(./assets/gradient-blue.jpg);
     background-size: auto;
     font-family: bitter;
-    font-size: large;
+    font-size: 50%;
 
 }
 
 .intro-para{
     font-family: bitter;
     text-align:center;
-    font-size: 10%;
+    font-size: 30%;
 }
 
 .myName {
     font-family: bitteritalics;
     text-align:center;
-    font-size: larger;
+    font-size: inherit;
 }
 
 *{
