@@ -1,51 +1,56 @@
-function openCity(evt, cityName) {
-    // Declare all variables
+function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
-  
-    // Get all elements with class="tabcontent" and hide them
+
+    // Hide all tab content
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
     }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
+
+    // Deactivate all tab links
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].classList.remove("active");
     }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
 
-  let slideIndex = 1;
-showSlides(slideIndex);
+    // Show the specific tab content
+    document.getElementById(tabName).style.display = "block";
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+    // Activate the current tab link
+    evt.currentTarget.classList.add("active");
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+// Function to control image slider
+var slideIndex = [];
+
+function plusSlides(n, tabName) {
+    showSlides(slideIndex[tabName] += n, tabName);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+function currentSlide(n, tabName) {
+    showSlides(slideIndex[tabName] = n, tabName);
 }
+
+function showSlides(n, tabName) {
+    var i;
+    var slides = document.getElementById(tabName).getElementsByClassName("mySlides");
+    var dots = document.getElementById(tabName).getElementsByClassName("demo");
+
+    if (n > slides.length) {
+        slideIndex[tabName] = 1;
+    }
+    if (n < 1) {
+        slideIndex[tabName] = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex[tabName] - 1].style.display = "block";
+    dots[slideIndex[tabName] - 1].className += " active";
+}
+
+// Open the default tab
+document.getElementsByClassName("tablinks")[0].click();
