@@ -18,10 +18,14 @@ function openTab(evt, tabName) {
 
     // Activate the current tab link
     evt.currentTarget.classList.add("active");
+
+    // Show the first slide when switching tabs
+    slideIndex[tabName] = 1;
+    showSlides(slideIndex[tabName], tabName);
 }
 
 // Function to control image slider
-var slideIndex = [];
+var slideIndex = {};
 
 function plusSlides(n, tabName) {
     showSlides(slideIndex[tabName] += n, tabName);
@@ -51,6 +55,3 @@ function showSlides(n, tabName) {
     slides[slideIndex[tabName] - 1].style.display = "block";
     dots[slideIndex[tabName] - 1].className += " active";
 }
-
-// Open the default tab
-document.getElementsByClassName("tablinks")[0].click();
