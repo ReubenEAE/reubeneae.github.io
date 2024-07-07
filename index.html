@@ -1,347 +1,294 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Hobbies</title>
-    <style>
-        /* CSS styles */
-        .tabcontent {
-            display: none;
-        }
+<!--
+TODO: 
+self -intro
+intrests/passions/hobbies
+awards & acheivements 
+    certs 
+    cca
+    positions
+community involment 
+letter of recomendation 
+relevance to course 
+-->
 
-        .container {
-            position: relative;
-        }
+<!DOCTYPE html>
+<!-- This site was created in Webflow. https://webflow.com -->
+<!-- Last Published: Sat Jul 06 2024 18:33:57 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="reubens-trendy-site-d29b94.webflow.io" data-wf-page="66855e3a33ac7d1cd8712556" data-wf-site="66855e3a33ac7d1cd8712525" data-wf-status="1">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Reuben &#x27;s Trendy Site</title>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <meta content="Webflow" name="generator"/>
+        <link href="./indexCSS.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com" rel="preconnect"/>
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous"/>
+    </head>
 
-        .mySlides {
-            display: none;
-        }
 
-        .prev, .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -22px;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            background-color: rgba(0, 0, 0, 0.8);
-        }
+    <body class="body">
+        <section class="section-6">
+            <div class="w-layout-hflex flex-block-5">
+                <div class="w-layout-hflex flex-block-6">
+                    <h1 class="heading-4">Hello! ,</h1>
+                    <h1 class="heading-5">
+                        My name is <strong>Reuben</strong>
+                    </h1>
+                    <div class="text-block">And this is my EAE Portfolio!</div>
 
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .prev:hover, .next:hover {
-            background-color: rgba(0, 0, 0, 1);
-        }
-
-        .row {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        .column {
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-            cursor: pointer;
-        }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-        }
-
-        .tab {
-            overflow: hidden;
-            background-color: #f1f1f1;
-            margin-bottom: 16px;
-        }
-
-        .tab button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-        }
-
-        .tab button:hover {
-            background-color: #ddd;
-        }
-
-        .tab button.active {
-            background-color: #ccc;
-        }
-
-        .section-heading {
-            margin-top: 0;
-            text-align: center;
-        }
-
-        .section-subheading {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-    </style>
-</head>
-<body>
-
-<div id="hobbies" class="sec-1">
-    <div class="w-container">
-        <div class="section-title-group">
-            <h2 class="section-heading">My Hobbies</h2>
-            <div class="section-subheading">This is how I spend my free time</div>
-
-            <!-- Tab links -->
-            <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'powerlifting')">Powerlifting</button>
-                <button class="tablinks" onclick="openTab(event, 'photography')">Photography</button>
-                <button class="tablinks" onclick="openTab(event, 'rockclimbing')">Rock Climbing</button>
-            </div>
-            
-            <!-- Powerlifting Tab Content -->
-            <div id="powerlifting" class="tabcontent">
-                <div class="slidercont">
-                    <div class="container">
-                        <div class="mySlides">
-                            <img src="img_woods_wide.jpg" alt="Powerlifting Slide 1">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_5terre_wide.jpg" alt="Powerlifting Slide 2">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_mountains_wide.jpg" alt="Powerlifting Slide 3">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_lights_wide.jpg" alt="Powerlifting Slide 4">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_nature_wide.jpg" alt="Powerlifting Slide 5">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_snow_wide.jpg" alt="Powerlifting Slide 6">
-                        </div>
-                        
-                        <!-- Previous and Next buttons -->
-                        <a class="prev" onclick="plusSlides(-1, 'powerlifting')">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 'powerlifting')">&#10095;</a>
-                    </div>
-                    
-                    <!-- Thumbnail images -->
-                    <div class="row">
-                        <div class="column">
-                            <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1, 'powerlifting')" alt="The Woods">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2, 'powerlifting')" alt="Cinque Terre">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3, 'powerlifting')" alt="Mountains and fjords">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4, 'powerlifting')" alt="Northern Lights">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5, 'powerlifting')" alt="Nature and sunrise">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6, 'powerlifting')" alt="Snowy Mountains">
-                        </div>
-                    </div>
+        </section>
+        <div id="navy" class="sec-1">
+            <div class="w-container">
+                <div class="section-title-group">
+                    <h2 class="section-heading centered">EAE PORTFOLIO</h2>
+                    <div class="section-subheading center">skip to point or keep scrolling</div>
                 </div>
-                <h3>Powerlifting</h3>
-                <p>Powerlifting is a strength sport that consists of three attempts at maximal weight on three lifts: squat, bench press, and deadlift. It's a great way to build strength and endurance.</p>
             </div>
-            
-            <!-- Photography Tab Content -->
-            <div id="photography" class="tabcontent">
-                <div class="slidercont">
-                    <div class="container">
-                        <div class="mySlides">
-                            <img src="img_woods_wide.jpg" alt="Photography Slide 1">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_5terre_wide.jpg" alt="Photography Slide 2">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_mountains_wide.jpg" alt="Photography Slide 3">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_lights_wide.jpg" alt="Photography Slide 4">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_nature_wide.jpg" alt="Photography Slide 5">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_snow_wide.jpg" alt="Photography Slide 6">
-                        </div>
-                        
-                        <!-- Previous and Next buttons -->
-                        <a class="prev" onclick="plusSlides(-1, 'photography')">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 'photography')">&#10095;</a>
-                    </div>
-                    
-                    <!-- Thumbnail images -->
-                    <div class="row">
-                        <div class="column">
-                            <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1, 'photography')" alt="The Woods">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2, 'photography')" alt="Cinque Terre">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3, 'photography')" alt="Mountains and fjords">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4, 'photography')" alt="Northern Lights">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5, 'photography')" alt="Nature and sunrise">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6, 'photography')" alt="Snowy Mountains">
+            <div class="w-layout-vflex flex-block-102">
+                <aside class="columns w-row">
+                    <div class="column-2 w-col w-col-3 w-col-medium-6">
+                        <div data-w-id="30d12a45-c999-e021-7a67-8cc9d5513048" style="opacity:0" class="w-layout-hflex flex-block-101">
+                            <h3 class="heading-17">About me</h3>
                         </div>
                     </div>
-                </div>
-                <h3>Photography</h3>
-                <p>Photography is an art that allows me to capture moments and express creativity through the lens of a camera. It's a way to explore and appreciate the beauty of the world.</p>
-            </div>
-            
-            <!-- Rock Climbing Tab Content -->
-            <div id="rockclimbing" class="tabcontent">
-                <div class="slidercont">
-                    <div class="container">
-                        <div class="mySlides">
-                            <img src="img_woods_wide.jpg" alt="Rock Climbing Slide 1">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_5terre_wide.jpg" alt="Rock Climbing Slide 2">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_mountains_wide.jpg" alt="Rock Climbing Slide 3">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_lights_wide.jpg" alt="Rock Climbing Slide 4">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_nature_wide.jpg" alt="Rock Climbing Slide 5">
-                        </div>
-                        <div class="mySlides">
-                            <img src="img_snow_wide.jpg" alt="Rock Climbing Slide 6">
-                        </div>
-                        
-                        <!-- Previous and Next buttons -->
-                        <a class="prev" onclick="plusSlides(-1, 'rockclimbing')">&#10094;</a>
-                        <a class="next" onclick="plusSlides(1, 'rockclimbing')">&#10095;</a>
-                    </div>
-                    
-                    <!-- Thumbnail images -->
-                    <div class="row">
-                        <div class="column">
-                            <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1, 'rockclimbing')" alt="The Woods">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2, 'rockclimbing')" alt="Cinque Terre">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3, 'rockclimbing')" alt="Mountains and fjords">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4, 'rockclimbing')" alt="Northern Lights">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5, 'rockclimbing')" alt="Nature and sunrise">
-                        </div>
-                        <div class="column">
-                            <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6, 'rockclimbing')" alt="Snowy Mountains">
+                    <div class="w-col w-col-3 w-col-medium-6">
+                        <div data-w-id="30d12a45-c999-e021-7a67-8cc9d551304f" style="opacity:0" class="w-layout-hflex flex-block-101">
+                            <h3 class="heading-19">My hobbies</h3>
                         </div>
                     </div>
-                </div>
-                <h3>Rock Climbing</h3>
-                <p>Rock climbing is a sport that involves climbing natural rock formations or artificial rock walls. It challenges me physically and mentally while allowing me to enjoy the outdoors.</p>
+                    <div class="w-col w-col-3 w-col-medium-6">
+                        <div data-w-id="30d12a45-c999-e021-7a67-8cc9d5513056" style="opacity:0" class="w-layout-hflex flex-block-101">
+                            <h3 class="heading-16">awards &amp;achievements</h3>
+                        </div>
+                    </div>
+                    <div class="column w-col w-col-3 w-col-medium-6">
+                        <div data-w-id="30d12a45-c999-e021-7a67-8cc9d551305d" style="opacity:0" class="w-layout-hflex flex-block-101">
+                            <h3 class="heading-18">letters of recommendation</h3>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
-    </div>
-</div>
 
-<script>
-    // JavaScript to open the correct tab by default and handle slider functionality
 
-    // Function to open a specific tab content
-    function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
+        <div id="about" class="sec-1 accent">
+            <div class="w-container">
+                <div class="section-title-group">
+                    <h2 class="section-heading centered white">About me</h2>
+                </div>
+                <p>
+                    My name is Reuben Tan Wei Jie. <br/>
+                    I am born in 2008, February 3rd. <br/>
+                    I finished my primary school education at Jiemin Primary school.<br/>I am currently studying at Bendemeer Secondary School, offering 7 subjects at the GCSE o-level express stream. 
+                </p>
+            </div>
+        </div>
 
-        // Hide all tab content
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
 
-        // Deactivate all tab links
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].classList.remove("active");
-        }
 
-        // Show the specific tab content
-        document.getElementById(tabName).style.display = "block";
+        <div id="hobbies" class="sec-1">
+            <div class="w-container">
+                <div class="section-title-group">
+                    <h2 class="section-heading">My Hobbies</h2>
+                    <div class="section-subheading">This is how I spend my free time</div>
+        
+                    <!-- Tab links -->
+                    <div class="tab">
+                        <button class="tablinks" onclick="openTab(event, 'powerlifting')">Powerlifting</button>
+                        <button class="tablinks" onclick="openTab(event, 'photography')">Photography</button>
+                        <button class="tablinks" onclick="openTab(event, 'rockclimbing')">Rock Climbing</button>
+                    </div>
+                    
+                    <!-- Powerlifting Tab Content -->
+                    <div id="powerlifting" class="tabcontent">
+                        <div class="slidercont">
+                            <div class="container">
+                                <div class="mySlides">
+                                    <img src="img_woods_wide.jpg" alt="Powerlifting Slide 1">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_5terre_wide.jpg" alt="Powerlifting Slide 2">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_mountains_wide.jpg" alt="Powerlifting Slide 3">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_lights_wide.jpg" alt="Powerlifting Slide 4">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_nature_wide.jpg" alt="Powerlifting Slide 5">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_snow_wide.jpg" alt="Powerlifting Slide 6">
+                                </div>
+                                
+                                <!-- Previous and Next buttons -->
+                                <a class="prev" onclick="plusSlides(-1, 'powerlifting')">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 'powerlifting')">&#10095;</a>
+                            </div>
+                            
+                            <!-- Thumbnail images -->
+                            <div class="row">
+                                <div class="column">
+                                    <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1, 'powerlifting')" alt="The Woods">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2, 'powerlifting')" alt="Cinque Terre">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3, 'powerlifting')" alt="Mountains and fjords">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4, 'powerlifting')" alt="Northern Lights">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5, 'powerlifting')" alt="Nature and sunrise">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6, 'powerlifting')" alt="Snowy Mountains">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Powerlifting</h3>
+                        <p>Powerlifting is a strength sport that consists of three attempts at maximal weight on three lifts: squat, bench press, and deadlift. It's a great way to build strength and endurance.</p>
+                    </div>
+                    
+                    <!-- Photography Tab Content -->
+                    <div id="photography" class="tabcontent">
+                        <div class="slidercont">
+                            <div class="container">
+                                <div class="mySlides">
+                                    <img src="img_woods_wide.jpg" alt="Photography Slide 1">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_5terre_wide.jpg" alt="Photography Slide 2">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_mountains_wide.jpg" alt="Photography Slide 3">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_lights_wide.jpg" alt="Photography Slide 4">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_nature_wide.jpg" alt="Photography Slide 5">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_snow_wide.jpg" alt="Photography Slide 6">
+                                </div>
+                                
+                                <!-- Previous and Next buttons -->
+                                <a class="prev" onclick="plusSlides(-1, 'photography')">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 'photography')">&#10095;</a>
+                            </div>
+                            
+                            <!-- Thumbnail images -->
+                            <div class="row">
+                                <div class="column">
+                                    <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1, 'photography')" alt="The Woods">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2, 'photography')" alt="Cinque Terre">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3, 'photography')" alt="Mountains and fjords">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4, 'photography')" alt="Northern Lights">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5, 'photography')" alt="Nature and sunrise">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6, 'photography')" alt="Snowy Mountains">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Photography</h3>
+                        <p>Photography is an art of capturing moments and scenes through the lens of a camera. It allows me to explore creativity and capture beautiful memories.</p>
+                    </div>
+                    
+                    <!-- Rock Climbing Tab Content -->
+                    <div id="rockclimbing" class="tabcontent">
+                        <div class="slidercont">
+                            <div class="container">
+                                <div class="mySlides">
+                                    <img src="img_woods_wide.jpg" alt="Rock Climbing Slide 1">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_5terre_wide.jpg" alt="Rock Climbing Slide 2">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_mountains_wide.jpg" alt="Rock Climbing Slide 3">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_lights_wide.jpg" alt="Rock Climbing Slide 4">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_nature_wide.jpg" alt="Rock Climbing Slide 5">
+                                </div>
+                                <div class="mySlides">
+                                    <img src="img_snow_wide.jpg" alt="Rock Climbing Slide 6">
+                                </div>
+                                
+                                <!-- Previous and Next buttons -->
+                                <a class="prev" onclick="plusSlides(-1, 'rockclimbing')">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1, 'rockclimbing')">&#10095;</a>
+                            </div>
+                            
+                            <!-- Thumbnail images -->
+                            <div class="row">
+                                <div class="column">
+                                    <img class="demo cursor" src="img_woods.jpg" style="width:100%" onclick="currentSlide(1, 'rockclimbing')" alt="The Woods">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_5terre.jpg" style="width:100%" onclick="currentSlide(2, 'rockclimbing')" alt="Cinque Terre">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_mountains.jpg" style="width:100%" onclick="currentSlide(3, 'rockclimbing')" alt="Mountains and fjords">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_lights.jpg" style="width:100%" onclick="currentSlide(4, 'rockclimbing')" alt="Northern Lights">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_nature.jpg" style="width:100%" onclick="currentSlide(5, 'rockclimbing')" alt="Nature and sunrise">
+                                </div>
+                                <div class="column">
+                                    <img class="demo cursor" src="img_snow.jpg" style="width:100%" onclick="currentSlide(6, 'rockclimbing')" alt="Snowy Mountains">
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Rock Climbing</h3>
+                        <p>Rock climbing is a sport that involves climbing natural rock formations or artificial rock walls. It challenges me physically and mentally while allowing me to enjoy the outdoors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
 
-        // Activate the current tab link
-        evt.currentTarget.classList.add("active");
 
-        // Show the first slide when switching tabs
-        slideIndex[tabName] = 1;
-        showSlides(slideIndex[tabName], tabName);
-    }
 
-    // Function to control image slider
-    var slideIndex = {};
-
-    function plusSlides(n, tabName) {
-        showSlides(slideIndex[tabName] += n, tabName);
-    }
-
-    function currentSlide(n, tabName) {
-        showSlides(slideIndex[tabName] = n, tabName);
-    }
-
-    function showSlides(n, tabName) {
-        var i;
-        var slides = document.getElementById(tabName).getElementsByClassName("mySlides");
-        var dots = document.getElementById(tabName).getElementsByClassName("demo");
-
-        if (n > slides.length) {
-            slideIndex[tabName] = 1;
-        }
-        if (n < 1) {
-            slideIndex[tabName] = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex[tabName] - 1].style.display = "block";
-        dots[slideIndex[tabName] - 1].className += " active";
-    }
-
-    // Open the default tab
-    document.getElementsByClassName("tablinks")[0].click();
-</script>
-
-</body>
+        <div id="recos" class="sec-1">
+            <div class="w-container">
+                <div class="section-title-group">
+                    <h2 class="section-heading centered">letters of reccomendation</h2>
+                </div>
+            </div>
+            <div class="w-layout-hflex flex-block-100">
+                <h1>( insert teacher name ) </h1>
+                <h4 class="heading-12">( insert teacher relation ) </h4>
+                <p>( testimonial goes here : blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah )</p>
+            </div>
+            <div class="w-layout-hflex flex-block-100">
+                <h1>( insert teacher name ) </h1>
+                <h4 class="heading-13">( insert teacher relation ) </h4>
+                <p>( testimonial goes here : blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah )</p>
+            </div>
+            <div class="w-layout-hflex flex-block-100">
+                <h1>( insert teacher name ) </h1>
+                <h4 class="heading-14">( insert teacher relation ) </h4>
+                <p>( testimonial goes here : blah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blahblah blah blah )</p>
+            </div>
+        </div>
+    </body>
 </html>
